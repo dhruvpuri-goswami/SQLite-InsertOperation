@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="login">Register Now</string>
+    <string name="lbtn">Register</string>
+    <string name="rbtn">RESET</string>
+    <string name="email">Enter E-Mail ID</string>
+    <string name="password">Enter Password</string>
+</resources>

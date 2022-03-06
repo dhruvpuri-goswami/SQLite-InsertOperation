@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    >
+
+    <TextView
+        android:id="@+id/logintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logintext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:autofillHints="no"
+        android:hint="Enter Your Name"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:autofillHints="no"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtemail"
+        android:layout_marginTop="40dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtpass"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="120dp"
+        android:onClick="addUser"
+        android:text="@string/lbtn" />
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btnlogin"
+        android:layout_below="@id/txtpass"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:onClick="onResetClicked"
+        android:text="@string/rbtn"
+
+        />
+</RelativeLayout>
